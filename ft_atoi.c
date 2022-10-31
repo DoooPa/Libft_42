@@ -6,12 +6,11 @@
 /*   By: sakarkal <sakarkal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 00:41:09 by sakarkal          #+#    #+#             */
-/*   Updated: 2022/10/30 17:25:23 by sakarkal         ###   ########.fr       */
+/*   Updated: 2022/10/31 19:06:39 by sakarkal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <limits.h>
 
 int	ft_atoi(const char *str)
 {
