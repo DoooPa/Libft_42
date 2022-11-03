@@ -6,7 +6,7 @@
 /*   By: sakarkal <sakarkal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/17 10:19:42 by sakarkal          #+#    #+#             */
-/*   Updated: 2022/10/18 09:49:22 by sakarkal         ###   ########.fr       */
+/*   Updated: 2022/11/03 19:14:32 by sakarkal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strdup(const char *s1)
 	int		i;
 	char	*p;
 
-	len =  ft_strlen(s1);
+	len = ft_strlen(s1);
 	i = 0;
 	p = malloc(sizeof(char) * len + 1);
 	if (!p)

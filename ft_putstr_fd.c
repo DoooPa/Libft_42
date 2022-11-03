@@ -6,7 +6,7 @@
 /*   By: sakarkal <sakarkal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 10:08:37 by sakarkal          #+#    #+#             */
-/*   Updated: 2022/10/28 16:36:30 by sakarkal         ###   ########.fr       */
+/*   Updated: 2022/11/03 19:14:06 by sakarkal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,5 +30,4 @@ void	ft_putstr_fd(char *s, int fd)
 // {
 // 	int fd = open("file", O_CREAT | O_RDWR,0777);
 // 	ft_putstr_fd("yarbu njah ",fd);
-	
 // }

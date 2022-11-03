@@ -6,7 +6,7 @@
 /*   By: sakarkal <sakarkal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/21 08:19:49 by sakarkal          #+#    #+#             */
-/*   Updated: 2022/10/27 16:25:21 by sakarkal         ###   ########.fr       */
+/*   Updated: 2022/11/03 19:16:58 by sakarkal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,6 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 // {
 // 	char *t = NULL;
 // 	unsigned int s = 2;
-	
 // 	size_t len = 10;
 // 	printf("%s\n", ft_substr(t, s, len));
 // }

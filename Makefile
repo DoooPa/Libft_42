@@ -6,7 +6,7 @@
 #    By: sakarkal <sakarkal@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/15 23:48:45 by sakarkal          #+#    #+#              #
-#    Updated: 2022/10/30 17:22:57 by sakarkal         ###   ########.fr        #
+#    Updated: 2022/11/03 22:05:45 by sakarkal         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -50,11 +50,11 @@ SRC = ft_atoi.c \
 	ft_toupper.c 
 
 OBJ = $(SRC:.c=.o)
-
-$(NAME): $(OBJ)
-	ar rcs $(NAME) $(OBJ)
 	
-%.o: %.c
+$(NAME): $(OBJ)
+	ar rc $(NAME) $(OBJ)
+
+%.o: %.c libft.h
 	$(CC) $(CFLAGS) -o $@ -c $<
 
 all : $(NAME)
@@ -67,4 +67,4 @@ fclean: clean
 
 re : fclean all
 
-.PHONY: clean fclean re
+.PHONY: all clean fclean re

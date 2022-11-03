@@ -6,7 +6,7 @@
 /*   By: sakarkal <sakarkal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 20:54:40 by sakarkal          #+#    #+#             */
-/*   Updated: 2022/10/31 18:35:08 by sakarkal         ###   ########.fr       */
+/*   Updated: 2022/11/03 18:58:47 by sakarkal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	size_t	j;
 	size_t	dstlen;
 	size_t	srclen;
-	size_t	res;
 
 	i = 0;
 	j = 0;
@@ -29,9 +28,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	dstlen = j;
 	srclen = ft_strlen(src);
 	if (dstsize > dstlen)
-		res = srclen + dstlen;
-	else
-		res = srclen + dstsize;
+		return (srclen + dstlen);
 	if (dstsize == 0 || dstlen >= dstsize)
 		return (dstsize + srclen);
 	while (src[i] != '\0' && j < dstsize - 1)
@@ -44,12 +41,12 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	return (dstlen + srclen);
 }
 
-// int    main()
+// int main()
 // {
-// 	// char    tab[50] = "12456";
-// 	char    src[] = "abcddddddd";
+// 	char tab[20] = "12456";
+// 	char src[] = "abcddddddd";
 
-// 	printf("%zu\n", ft_strlcat(NULL, src, 0));
-// 	// printf("%zu\n", strlcat(NULL, src, 0));
-// 	printf("%s\n", src);
+// 	printf("%zu\n", ft_strlcat(tab, src, 20));
+// 	printf("%zu\n", strlcat(tab, src, 20));
+// 	printf("%s\n", tab);
 // }

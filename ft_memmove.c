@@ -6,7 +6,7 @@
 /*   By: sakarkal <sakarkal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/13 09:19:58 by sakarkal          #+#    #+#             */
-/*   Updated: 2022/10/27 11:23:42 by sakarkal         ###   ########.fr       */
+/*   Updated: 2022/11/02 18:53:19 by sakarkal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 		return (dest);
 	if (d < s)
 		while (n--)
-		*d++ = *s++;
+			*d++ = *s++;
 	else
 	{
 		lastd = d + (n - 1);
@@ -42,6 +42,12 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 // 	char *src = "AABBCC";
 // 	// int len = strlen(dst);
 // 	// printf("|%s|", memmove(NULL, b, 5));
-// 	printf("-%s", ft_memmove(NULL, src, 5));
+// 	int x[] = {1,2,3,4,5};
+// 	ft_memmove(&x[2],&x,3 * sizeof(int));
+// 	printf("%d " , x[0] );
+// 	printf("%d " , x[1] );
+// 	printf("%d " , x[2] );
+// 	printf("%d " , x[3] );
+// 	printf("%d " , x[4] );
 // 	return 0;
 // }

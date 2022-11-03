@@ -6,7 +6,7 @@
 /*   By: sakarkal <sakarkal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 11:24:51 by sakarkal          #+#    #+#             */
-/*   Updated: 2022/10/18 11:46:01 by sakarkal         ###   ########.fr       */
+/*   Updated: 2022/11/03 19:16:36 by sakarkal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,13 +20,13 @@ char	*ft_strrchr(const char *s, int c)
 	while (--i >= 0)
 		if (s[i] == (unsigned char)c)
 			return ((char *)s + i);
-	return 0;
+	return (0);
 }
 // int main()
 // {
 // 	char tb[] = "sdfghjkjhuyjh";
 // 	int c = 's';
-	
+
 // 	printf("%s\n", ft_strrchr(tb, c));
 // 	printf("%s\n", strrchr(tb, c));
 // }

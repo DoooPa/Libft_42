@@ -6,7 +6,7 @@
 /*   By: sakarkal <sakarkal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/22 12:13:54 by sakarkal          #+#    #+#             */
-/*   Updated: 2022/10/27 11:08:19 by sakarkal         ###   ########.fr       */
+/*   Updated: 2022/11/01 01:23:26 by sakarkal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ char	*ft_strtrim(char const *s, char const *set)
 	while (ft_strchr(set, s[strt]) && s[strt])
 		strt++;
 	end = ft_strlen(s);
-	while (ft_strchr(set, s[end]))
+	while (ft_strchr(set, s[end]) && end != 0)
 		end--;
 	if (end < strt)
 		return (ft_strdup(""));
@@ -37,7 +37,7 @@ char	*ft_strtrim(char const *s, char const *set)
 }
 // int main()
 // {
-// 	char *s = ft_strtrim("abcdba", "acb");
+// 	char *s = ft_strtrim("          ", " ");
 
 // 	printf("|%s|\n", s);
 // }

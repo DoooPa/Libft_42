@@ -6,7 +6,7 @@
 /*   By: sakarkal <sakarkal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 00:41:09 by sakarkal          #+#    #+#             */
-/*   Updated: 2022/10/31 19:06:39 by sakarkal         ###   ########.fr       */
+/*   Updated: 2022/11/03 19:02:12 by sakarkal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 int	ft_atoi(const char *str)
 {
-	int		i;
-	int		signe;
-	int  	resu;
+	int	i;
+	int	signe;
+	int	resu;
 
 	i = 0;
 	signe = 1;

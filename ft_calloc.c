@@ -6,7 +6,7 @@
 /*   By: sakarkal <sakarkal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/17 10:15:44 by sakarkal          #+#    #+#             */
-/*   Updated: 2022/10/30 18:06:39 by sakarkal         ###   ########.fr       */
+/*   Updated: 2022/11/03 21:50:44 by sakarkal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,10 @@
 void	*ft_calloc(size_t count, size_t size)
 {
 	void	*ptr;
-	size_t toto = count * size;
+	size_t	toto;
 
-	if (size != toto / count)
+	toto = count * size;
+	if (count != 0 && size != toto / count)
 		return (NULL);
 	ptr = malloc(count * size);
 	if (ptr == 0)
