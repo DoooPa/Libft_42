@@ -6,7 +6,7 @@
 /*   By: sakarkal <sakarkal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 00:17:56 by sakarkal          #+#    #+#             */
-/*   Updated: 2022/11/03 23:26:03 by sakarkal         ###   ########.fr       */
+/*   Updated: 2022/11/04 02:02:26 by sakarkal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,10 +60,3 @@ char	*ft_itoa(int nbr)
 	}
 	return (str);
 }
-
-// int main()
-// {
-// 	int t = 0;
-
-// 	printf("%s\n", ft_itoa(t));
-// }	

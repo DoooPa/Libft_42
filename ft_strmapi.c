@@ -6,7 +6,7 @@
 /*   By: sakarkal <sakarkal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 10:41:05 by sakarkal          #+#    #+#             */
-/*   Updated: 2022/11/03 23:27:08 by sakarkal         ###   ########.fr       */
+/*   Updated: 2022/11/04 02:19:10 by sakarkal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,17 +31,3 @@ char	*ft_strmapi(char const *str, char (*f)(unsigned int, char))
 	api[i] = '\0';
 	return (api);
 }
-
-// char y(unsigned int i , char c)
-// {
-// 	return (c + i);
-// }
-
-// int main(void)
-// {
-// 	char x[] = "abcdefgH";
-
-// 	char *s = ft_strmapi(x, y);
-
-// 	printf("| %s |\n", s);
-// }

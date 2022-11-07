@@ -6,7 +6,7 @@
 /*   By: sakarkal <sakarkal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 20:54:40 by sakarkal          #+#    #+#             */
-/*   Updated: 2022/11/03 23:27:03 by sakarkal         ###   ########.fr       */
+/*   Updated: 2022/11/05 21:46:36 by sakarkal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,39 +14,19 @@
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
+	size_t	dst_len;
+	size_t	src_len;
 	size_t	i;
-	size_t	j;
-	size_t	dstlen;
-	size_t	srclen;
 
-	i = 0;
-	j = 0;
-	if (dstsize == 0 || dstsize < ft_strlen(dst))
-		return (dstsize + ft_strlen(src));
-	while (dst[j] != '\0')
-		j++;
-	dstlen = j;
-	srclen = ft_strlen(src);
-	if (dstsize > dstlen)
-		return (srclen + dstlen);
-	if (dstsize == 0 || dstlen >= dstsize)
-		return (dstsize + srclen);
-	while (src[i] != '\0' && j < dstsize - 1)
-	{
-		dst[j] = src[i];
-		j++;
-		i++;
-	}
-	dst[j] = '\0';
-	return (dstlen + srclen);
+	src_len = ft_strlen(src);
+	i = -1;
+	if ((!dstsize && !dst) || !dstsize)
+		return (src_len);
+	dst_len = ft_strlen(dst);
+	if (dst_len > dstsize)
+		return (src_len + dstsize);
+	while (src[++i] && i + dst_len < dstsize - 1)
+		dst[i + dst_len] = src[i];
+	dst[i + dst_len] = '\0';
+	return (dst_len + src_len);
 }
-
-// int main()
-// {
-// 	char tab[20] = "12456";
-// 	char src[] = "abcddddddd";
-
-// 	printf("%zu\n", ft_strlcat(tab, src, 20));
-// 	printf("%zu\n", strlcat(tab, src, 20));
-// 	printf("%s\n", tab);
-// }

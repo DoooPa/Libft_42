@@ -6,7 +6,7 @@
 /*   By: sakarkal <sakarkal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 18:46:46 by sakarkal          #+#    #+#             */
-/*   Updated: 2022/11/03 23:27:11 by sakarkal         ###   ########.fr       */
+/*   Updated: 2022/11/04 02:19:14 by sakarkal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,11 +31,3 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return (0);
 }
-// int main()
-// {
-// 	char	*s1 = "Iaa";
-// 	char 	*s2 = "aÏa";
-// 	size_t	size = 3;
-// 	printf("Dyal System : %d\n", strncmp(s1, s2, size));
-// 	printf("Diyalii     : %d\n", ft_strncmp(s1, s2, size));
-// }

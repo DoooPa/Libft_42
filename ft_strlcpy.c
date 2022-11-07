@@ -6,7 +6,7 @@
 /*   By: sakarkal <sakarkal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 04:52:38 by sakarkal          #+#    #+#             */
-/*   Updated: 2022/11/03 23:27:26 by sakarkal         ###   ########.fr       */
+/*   Updated: 2022/11/04 02:18:59 by sakarkal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,9 +30,3 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	}
 	return (x);
 }
-// int main()
-// {
-// 	char	src[] = "qwerty";
-// 	char	dst[] = "hello ";
-// 	printf("%zu\n%s", ft_strlcpy(dst, src, 3), dst);
-// }

@@ -6,7 +6,7 @@
 /*   By: sakarkal <sakarkal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 14:47:03 by sakarkal          #+#    #+#             */
-/*   Updated: 2022/11/03 23:26:55 by sakarkal         ###   ########.fr       */
+/*   Updated: 2022/11/04 02:18:43 by sakarkal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,27 +25,3 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 		i++;
 	}
 }
-
-// void	f1(unsigned int x, char *c)
-// {
-// 	*c -=32;
-// }
-
-// void	f(unsigned int x, char *c)
-// {
-// 	(void)x;
-// 	if(*c >= 0 && *c <= 127)
-// 		*c += 1;
-// }
-
-// int main()
-// {
-// 	char s[] = "hello";
-
-// 	ft_striteri(s, &f);
-
-// 	printf("%s\n", s);
-
-// 	ft_striteri(s, &f1);
-// 	printf("%s\n", s);
-// }

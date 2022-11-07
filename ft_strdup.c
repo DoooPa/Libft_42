@@ -6,7 +6,7 @@
 /*   By: sakarkal <sakarkal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/17 10:19:42 by sakarkal          #+#    #+#             */
-/*   Updated: 2022/11/03 23:26:53 by sakarkal         ###   ########.fr       */
+/*   Updated: 2022/11/04 02:18:39 by sakarkal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,15 +31,3 @@ char	*ft_strdup(const char *s1)
 	p[len] = '\0';
 	return (p);
 }
-
-// int main()
-// {
-// 	char source[] = "1337_khouribga 42";
-// 	char *dest;
-// 	dest = ft_strdup(source);
-// 	// A copy of source is created dynamically
-// 	// and pointer to copy is returned.
-
-// 	printf("%s", dest);
-// 	return 0;
-// }

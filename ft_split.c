@@ -6,7 +6,7 @@
 /*   By: sakarkal <sakarkal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 00:22:39 by sakarkal          #+#    #+#             */
-/*   Updated: 2022/11/03 23:26:47 by sakarkal         ###   ########.fr       */
+/*   Updated: 2022/11/04 09:48:39 by sakarkal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,15 +79,3 @@ char	**ft_split(char const *str, char c)
 	str_split[i] = NULL;
 	return (str_split);
 }
-// int main()
-// {
-// 	char tc[] = "--qwerty---1337-saad-";
-// 	char c = '-';
-// 	char **str = ft_split(tc, c);
-// 	while (*str)
-// 	{
-// 		printf("%s\n", *str++);
-// 	}
-// 	while(1)
-// 		printf("NULL");
-// }

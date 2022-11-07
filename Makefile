@@ -6,7 +6,7 @@
 #    By: sakarkal <sakarkal@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/15 23:48:45 by sakarkal          #+#    #+#              #
-#    Updated: 2022/11/03 23:24:04 by sakarkal         ###   ########.fr        #
+#    Updated: 2022/11/05 23:47:04 by sakarkal         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ AR = ar rc
 SRC =	ft_atoi.c \
 	ft_bzero.c \
 	ft_calloc.c \
-	t_isalnum.c \
+	ft_isalnum.c \
 	ft_isalpha.c \
 	ft_isascii.c \
 	ft_isdigit.c \
@@ -56,11 +56,13 @@ B_SRCS =	ft_lstnew.c \
 		ft_lstadd_front.c \
 		ft_lstsize.c \
 		ft_lstlast.c \
-		ft_lstadd_back.c 
+		ft_lstadd_back.c \
+		ft_lstdelone.c \
+		ft_lstclear.c 
 
 OBJ = $(SRC:%.c=%.o)
-B_OBJ = $(B_SRCS:%.c=%.o)
 
+B_OBJ = $(B_SRCS:%.c=%.o)
 	
 $(NAME): $(OBJ)
 	$(AR) $(NAME) $(OBJ)

@@ -6,7 +6,7 @@
 /*   By: sakarkal <sakarkal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 12:29:37 by sakarkal          #+#    #+#             */
-/*   Updated: 2022/11/03 23:27:13 by sakarkal         ###   ########.fr       */
+/*   Updated: 2022/11/04 02:19:19 by sakarkal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,11 +36,3 @@ char	*ft_strnstr(const char *s, const char *to_find, size_t len)
 	}
 	return (0);
 }
-
-// int main()
-// {
-// 	char str[100] = "wawaachhada";
-// 	char find[100] = "ha";
-// 	printf("%s\n", ft_strnstr(str, find, 8));
-// 	// printf("%s\n", strnstr(NULL, find, 8));
-// }

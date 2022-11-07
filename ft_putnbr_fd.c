@@ -6,7 +6,7 @@
 /*   By: sakarkal <sakarkal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 21:42:36 by sakarkal          #+#    #+#             */
-/*   Updated: 2022/11/03 23:26:43 by sakarkal         ###   ########.fr       */
+/*   Updated: 2022/11/04 02:18:08 by sakarkal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,11 +32,3 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putchar_fd(nb + 48, fd);
 	}
 }
-
-// int main()
-// {
-
-// 	int fd = open("file", O_CREAT | O_RDWR | O_TRUNC, 0777);
-// 	printf("%d\n", fd);
-// 	ft_putnbr_fd(4474836, fd);
-// }

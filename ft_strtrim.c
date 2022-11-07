@@ -6,7 +6,7 @@
 /*   By: sakarkal <sakarkal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/22 12:13:54 by sakarkal          #+#    #+#             */
-/*   Updated: 2022/11/03 23:27:18 by sakarkal         ###   ########.fr       */
+/*   Updated: 2022/11/04 02:19:27 by sakarkal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,9 +35,3 @@ char	*ft_strtrim(char const *s, char const *set)
 	ptr = ft_substr(s, strt, end - strt + 1);
 	return (ptr);
 }
-// int main()
-// {
-// 	char *s = ft_strtrim("          ", " ");
-
-// 	printf("|%s|\n", s);
-// }

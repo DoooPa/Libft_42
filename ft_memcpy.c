@@ -6,7 +6,7 @@
 /*   By: sakarkal <sakarkal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 10:14:21 by sakarkal          #+#    #+#             */
-/*   Updated: 2022/11/03 23:26:28 by sakarkal         ###   ########.fr       */
+/*   Updated: 2022/11/04 02:02:57 by sakarkal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,12 +28,3 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-
-// int main()
-// {
-// 	char dst[20] = "abc123\n";
-// 	char *src = "AABBCC";
-// 	int len = strlen(dst);
-// 	printf("%s", ft_memcpy(dst + 3, dst, len + 1));
-// 	return 0;
-// }
